@@ -3,7 +3,7 @@ import LandingPage from "@/pages/landingpage";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-black flex items-center justify-center">
       <LandingPage />
     </div>
   );
