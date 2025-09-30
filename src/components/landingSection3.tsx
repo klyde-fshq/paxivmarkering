@@ -5,7 +5,7 @@ import Zoning from "./zoning";
 
 export default function LandingSection3() {
     return (
-        <div className="flex flex-col bg-yellow-200 w-[1440px] px-10 py-10">
+        <div className="flex flex-col bg-yellow-100 w-[1440px] px-[100px] py-[86px]">
             <hr className="border-gray-500" />
             <ParcelDetails />
             <hr className="border-gray-500" />

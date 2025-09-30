@@ -1,26 +1,23 @@
+import Occupation from "./occupation"
+import WorkforceClass from "./workforceClass"
+import WorkforceIndustry from "./workforceIndustry"
+import Image from "next/image"
+import chevron_Up from "../assets/Chevron_Up.png"
+
 export default function Demographics() {
+    
+
     return (
-        <div>
-            <h1 className="text-[32px] tracking-[2%] align-middle">Demographics</h1>
-            <h2>Workforce Class</h2>
-            <div className="gap-[20px]">
-                <div >
-                    <div className="flex gap-[4px] text-[12px]">
-                        <h1>Educational service, and healthcare and social assistance</h1>
-                        <h1>- 22.4%</h1>
-                        <h1 className="text-gray-400">± 0.9%</h1>
-                    </div>
-                    <hr className="border-yellow-500 border-solid border-[16px] w-[489px]" />
-                </div>
-                <div>
-                    <div className="flex gap-[4px] text-[12px]">
-                        <h1>Professional, scientific, and management, and administrative and waste management services</h1>
-                        <h1>- 14.1%</h1>
-                        <h1 className="text-gray-400">± 0.9%</h1>
-                    </div>
-                    <hr className="border-yellow-500 border-solid border-[16px] w-[330px]" />
-                </div>
+        <div className="flex flex-col  gap-[24px]">
+            <div className="flex justify-between items-center">
+                <h1 className="text-[32px] tracking-[2%] align-middle">Demographics</h1>
+                <Image src={chevron_Up} alt="chevron_Up" className="w-[24px] h-[24px] align-middle" />
             </div>
+            <WorkforceClass />
+            <hr className="border-yellow-500" />
+            <WorkforceIndustry />
+            <hr className="border-yellow-500" />
+            <Occupation />
         </div>
     )
 }

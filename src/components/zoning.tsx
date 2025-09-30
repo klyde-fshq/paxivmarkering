@@ -7,14 +7,23 @@ import widthLogo from "../assets/widthLogo.png"
 
 export default function Zoning() {
 
+    const permittedUses = [
+        "Manufacturing",
+        "Storage",
+        "Research",
+        "Distribution",
+        "Showroom",
+        "Vehicle Services",
+    ]
+
 
     return (
-        <div className="w-[1440px] p-[10px]">
+        <div className="max-w-[1240px] p-[10px]">
             <div className="flex justify-between items-center">
                 <h1 className="text-[32px] tracking-[2%] align-middle">Zoning</h1>
                 <Image src={chevron_Up} alt="chevron_Up" className="w-[24px] h-[24px] align-middle" />
             </div>
-            <div className="grid grid-cols-3 gap-20px text-yellow-500">
+            <div className="grid grid-cols-3 gap-20px text-yellow-500 ">
                 <div className="">
                     <h2 className="text-[24px]">Zone Code</h2>
                     <div className="flex gap-[24px]">
@@ -30,15 +39,14 @@ export default function Zoning() {
                     </div>
                 </div>
                 
-                <div className="">
+                <div className="flex flex-col w-[365px] h-[124px] gap-[16px]">
                     <h2 className="text-[24px]">Permitted Uses</h2>
-                    <div className="flex gap-[20px]">
-                        <h1>Manufacturing</h1>
-                        <h1>Storage</h1>
-                        <h1>Research</h1>
-                        <h1>Distribution</h1>
-                        <h1>Showroom</h1>
-                        <h1>Vehicle Services</h1>
+                    <div className="grid grid-cols-3 w-[365px] gap-[20px] text-[12px]">
+                        {permittedUses.map((permittedUse, index) => (
+                            <div key={index} className="flex gap-[8px] bg-yellow-200 rounded-[100px] px-18px py-[6px] items-center justify-center">
+                                <h1>{permittedUse}</h1>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

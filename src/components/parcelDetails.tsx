@@ -4,7 +4,7 @@ import chevron_Up from "../assets/Chevron_Up.png"
 
 export default function ParcelDetails() {
     return (
-        <div className="w-[1440px] p-[10px]">
+        <div className="w-[1240px] p-[10px]">
             
             <div className="flex justify-between items-center">
                 <h1 className="text-[32px] tracking-[2%] align-middle">Parcel Details</h1>

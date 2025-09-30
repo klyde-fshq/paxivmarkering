@@ -1,9 +1,13 @@
-
+import Image from "next/image"
+import chevron_Up from "../assets/Chevron_Up.png"
 
 export default function Ownership() {
     return (
-        <div>
-            <h1 className="text-[32px] tracking-[2%] align-middle">Ownership</h1>
+        <div className="w-[1240px]">
+            <div className="flex justify-between items-center">
+                <h1 className="text-[32px] tracking-[2%] align-middle">Ownership</h1>
+                <Image src={chevron_Up} alt="chevron_Up" className="w-[24px] h-[24px] align-middle" />
+            </div>
             <div className="grid grid-cols-3 gap-20px text-yellow-500">
                 <div className="">
                     <h2 className="text-[24px]">Name</h2>
