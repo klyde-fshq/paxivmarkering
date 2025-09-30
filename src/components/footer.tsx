@@ -1,14 +1,14 @@
-import Image from "next/image"
 import logo from "@/src/assets/Logo.svg"
+import Image from "next/image"
 
 import facebookIcon from "@/src/assets/Facebook.svg"
-import twitterIcon from "@/src/assets/Twitter.svg"
-import linkedinIcon from "@/src/assets/LinkedIn.svg"
 import instagramIcon from "@/src/assets/Instagram.svg"
+import linkedinIcon from "@/src/assets/LinkedIn.svg"
+import twitterIcon from "@/src/assets/Twitter.svg"
 import youtubeIcon from "@/src/assets/YouTube.svg"
 
 export default function Footer() {
-    return (<div>
+    return (<div className="flex flex-col">
         <div className="flex flex-col bg-white w-[1440px] gap-[10px] py-[100px] px-[206px] justify-center items-center">
             <div className="flex flex-col bg-gray-100 w-[1028.119140625px] h-[332px] rounded-[14px] p-[120px] justify-center items-center gap-[36px]">
                 <h1 className="text-[32px] leading-[40px] font-bold text-center">
@@ -22,7 +22,7 @@ export default function Footer() {
 
         <div className="bg-white w-[1440px] gap-[48px]  pt-[48px] pb-[12px] justify-center items-center">
             <div className="flex flex-col gap-[24px] w-[1440px]">
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center px-[20px]">
                     <Image src={logo} alt="logo"/>
                     <div className="flex gap-[11px] items-center justify-center content-between text-[14px] leading-[24px] tracking-[2%] alignment-middle">
                         <a href="#" className="px-[18px] py-[14px] hover:text-yellow-200">Company</a>
