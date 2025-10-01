@@ -4,14 +4,14 @@ import chevron_Up from "../../assets/Chevron_Up.png"
 
 export default function ParcelDetails() {
     return (
-        <div className="w-[1240px] p-[10px]">
+        <div className=" md:w-[1240px] md:p-[10px]">
             
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center ">
                 <h1 className="text-[32px] tracking-[2%] align-middle">Parcel Details</h1>
                 <Image src={chevron_Up} alt="chevron_Up" className="w-[24px] h-[24px] align-middle" />
             </div>
             
-            <div className="grid grid-cols-3 gap-20px">
+            <div className="flex flex-col gap-[24px] md:grid md:grid-cols-3 md:gap-20px">
                 <div className="text-yellow-500 ">
                     <h2 className="text-[24px]">Parcel Sq Ft</h2>
                     <h1 className="text-[48px]">174,240 Sq Ft</h1>

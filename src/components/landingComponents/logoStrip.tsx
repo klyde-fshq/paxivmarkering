@@ -14,7 +14,7 @@ import clearcreek from "@/src/assets/Logo/Clearcreek.png"
 
 export default function LogoStrip() {
     return (
-        <div className="flex  space-between gap-20px py-52px px-81px border-1 border-black border-dashed ">
+        <div className="flex  space-between gap-20px py-52px px-81px border-1 border-black border-dashed overflow-x-hidden">
             <div className="flex py-12 animate-marquee whitespace-nowrap">
                 <span className="mx-4 text-4xl"><Image src={DHI} alt="DHI" className="w-full h-full" /></span>
                 <span className="mx-4 text-4xl"><Image src={Capital} alt="Capital" /></span>

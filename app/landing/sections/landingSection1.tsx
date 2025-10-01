@@ -10,7 +10,7 @@ import offmarket from "@/src/assets/offMarketOpportunities.svg"
 import logo from "@/src/assets/fireflyLogo.jpg"
 
 
-export default function LandingSection1() {
+export default function LandingSection2() {
     let [activePlatform, setActivePlatform] = useState(0)
     const platformImages = [
         mapping,
@@ -28,17 +28,16 @@ export default function LandingSection1() {
     ]
 
     return (
-        <div className="bg-white p-[100px] gap-[10px] w-[1440px]">
+        <div className="bg-white w-[393px] p-[10px] md:p-[100px] gap-[10px] md:w-[1440px]">
             
-            <h1 className="text-[48px] font-medium leading-[64px] mb-10">
+            <h1 className="text-[32px] md:text-[48px] font-medium leading-[64px] mb-10 text-center md:text-left">
                 The All-In-One Property Intelligence Platform
             </h1>
 
            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-[37px] items-start">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[37px]">
                 
-                
-                <div className="space-y-6">
+                <div className="space-y-6 order-last px-10 md:px-0 md:order-first ">
                     {[
                         "Mapping",
                         "PAXIV AI",
@@ -49,7 +48,7 @@ export default function LandingSection1() {
                         <div key={index} className="group border-b pb-3">
                             {activePlatform === index ?
                             <div className="flex items-center gap-3 cursor-pointer" onClick={() => setActivePlatform(index)}>
-                                {/* Logo (only left 50% visible on hover) */}
+                                
                                 <div className="relative w-[26.73px] h-[24px] overflow-hidden">
                                     <Image
                                         src={logo}
@@ -57,14 +56,14 @@ export default function LandingSection1() {
                                         className="absolute left-0 top-0 h-full w-full object-contain opacity-100 group-hover:opacity-100 transition-opacity duration-300 [clip-path:inset(0_50%_0_0)]"
                                     />
                                 </div>
-                                {/* Text */}
+                                
                                 <h2 className="text-[28px] md:text-[32px] leading-[40px] font-normal">
                                 {item}
                                 </h2>
                             </div>
                             :
                             <div className="flex items-center gap-3 cursor-pointer" onClick={() => setActivePlatform(index)}>
-                                {/* Logo (only left 50% visible on hover) */}
+                                
                                 <div className="relative w-[26.73px] h-[24px] overflow-hidden">
                                     <Image
                                         src={logo}
@@ -72,7 +71,7 @@ export default function LandingSection1() {
                                         className="absolute left-0 top-0 h-full w-full object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-300 [clip-path:inset(0_50%_0_0)]"
                                     />
                                 </div>
-                                {/* Text */}
+                                
                                 <h2 className="text-[28px] md:text-[32px] leading-[40px] font-normal">
                                 {item}
                                 </h2>
@@ -88,7 +87,7 @@ export default function LandingSection1() {
 
 
 
-                <div className="flex flex-col gap-4 w-[498px]">
+                <div className="flex flex-col m-auto gap-4 w-[323px] md:w-[498px]">
                     <Image src={platformImages[activePlatform]} alt="Property visualization" className="rounded-md shadow" />
                     <p className="text-justify text-[18px] leading-[28px]">
                         {platformDescriptions[activePlatform]}
@@ -100,19 +99,3 @@ export default function LandingSection1() {
 }
 
 
-
-// <div className="flex items-center gap-3 cursor-pointer" onClick={() => setActivePlatform(item)}>
-//                                 {/* Logo (only left 50% visible on hover) */}
-//                                 <div className="relative w-[26.73px] h-[24px] overflow-hidden">
-//                                     <Image
-//                                         src={logo}
-//                                         alt="logo"
-//                                         className="absolute left-0 top-0 h-full w-full object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-300 [clip-path:inset(0_50%_0_0)]"
-//                                     />
-//                                 </div>
-//                                 {/* Text */}
-//                                 <h2 className="text-[28px] md:text-[32px] leading-[40px] font-normal">
-//                                 {item}
-//                                 </h2>
-//                             </div>
-                            

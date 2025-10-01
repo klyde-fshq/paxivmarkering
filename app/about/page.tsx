@@ -14,17 +14,30 @@ export default function AboutPage() {
         "PAXIV believes transparency is the foundation of a stronger commercial real estate market. By opening access to critical data and eliminating hidden barriers, the company is helping create a marketplace where trust and opportunity go hand in hand. Every innovation within the platform is designed to empower communities, support responsible development, and ultimately build a better future for the families and businesses that depend on these spaces. PAXIV’s vision is a market where growth is both profitable and sustainable—benefiting all who live, work, and invest within it."
     ]
     return (
-        <div className="flex flex-col bg-black w-1240px items-center justify-center">
+        <div className="flex flex-col bg-black items-center justify-center">
             <AboutNavBar />
-            {/* <div className="flex flex-col bg-yellow-100 w-[1440px] items-center justify-center w-[1240px] gap-[80px] pt-[80px] pb-[100px] px-[100px] md:w-[1024px]">
-                {title.map((title, index) => (
-                    <div className="grid grid-cols-[1fr_2fr] gap-[200px] items-start" key={index}>
-                        <h1 className="text-[48px] font-medium leading-[64px] text-yellow-500">{title}</h1>
-                        <p className="text-[16px] leading-[26px] tracking-[2%]">{description[index]}</p>
+            <div className="flex flex-col bg-yellow-100 max-w-[1440px] w-full items-center justify-center gap-20 pt-20 pb-24 px-6 sm:px-10 lg:px-20">
+                {title.map((item, index) => (
+                    <div
+                    key={index}
+                    className="grid grid-cols-1 gap-8 items-start sm:gap-10 lg:grid-cols-[1fr_2fr] lg:gap-20"
+                    >
+                    {/* Title */}
+                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-medium leading-tight text-yellow-500">
+                        {item}
+                    </h1>
+
+                    {/* Description */}
+                    <p className="text-base leading-6 tracking-wide">
+                        {description[index]}
+                    </p>
                     </div>
                 ))}
-            </div> */}
-            {/* <Footer /> */}
+            </div>
+            <div className="lg:w-[1440px] md:w-full sm:w-full xs:w-full">
+                <Footer />
+            </div>
+            
         </div>
     )
 }

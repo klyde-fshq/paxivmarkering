@@ -12,14 +12,14 @@ export default function LandingPage() {
   return (
    <div className="flex flex-col bg-black w-[100%] items-center justify-center">
       <div className="flex flex-col items-center justify-center w-[1440px]">
-          <Hero />
+          {/* <Hero /> */}
           <div className="z-20">
-            <LandingSection1 />
+            {/* <LandingSection1 /> */}
             <LandingSection2 />
-            <LandingSection3 />
+            {/* <LandingSection3 />
             <LandingSection4 />
             <Faq />
-            <Footer />
+            <Footer /> */}
           </div>
       </div>
    </div>

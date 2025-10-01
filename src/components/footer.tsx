@@ -10,7 +10,7 @@ import youtubeIcon from "@/src/assets/YouTube.svg"
 export default function Footer() {
     return (<div className="flex flex-col z-20">
         <div className="flex flex-col bg-white w-[1440px] gap-[10px] py-[100px] px-[206px] justify-center items-center">
-            <div className="flex flex-col bg-gray-100 w-[1028.119140625px] h-[332px] rounded-[14px] p-[120px] justify-center items-center gap-[36px] lg:w-[1024px] md:w-[768px] md:text-[14px] sm:w-[323px] sm:h-[445px] sm:text-[14px]">
+            <div className="flex flex-col bg-gray-200 w-[1028.119140625px] h-[332px] rounded-[14px] p-[120px] justify-center items-center gap-[36px]">
                 <h1 className="text-[32px] leading-[40px] font-bold text-center">
                     Start exploring PAXIV for free and access your
                     all-in-one platform—covering everything from land 

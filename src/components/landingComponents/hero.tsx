@@ -16,31 +16,30 @@ import pinLoc from "@/src/assets/pinLocation.svg"
 
 export default function Hero() {
   return (
-    <div className="relative w-[1440px] h-[1104px] flex justify-center" >
+    <div className="relative h-[1098px] md:w-[1440px] md:h-[1104px] flex justify-center overflow-hidden" >
 
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0  rotate-90 md:rotate-0 md:w-[1440px] md:h-[1104px]">
         <Image src={heroBg} alt="Hero background" fill className="object-cover" priority />
       </div>
 
       <div className="absolute inset-x-0 top-0 h-1/2 z-10 pointer-events-none bg-gradient-to-b from-black/90 to-transparent" />
       <div className="absolute inset-x-0 bottom-0 h-1/2 z-10 pointer-events-none bg-gradient-to-t from-black to-transparent" />
 
-    <div className="relative z-20 w-full flex flex-col justify-between h-full">
-      <div>
+    <div className="relative z-20  flex flex-col justify-between h-full">
+      <div className="w-full">
         <Navbar />
       </div>
 
-      <div className="grid grid-cols-[1fr_0.5fr] px-20 text-white">
-        <div className="mt-6">
-          <h1 className="text-white text-[72px] leading-tight font-bold">
+      <div className="flex flex-col  md:grid md:grid-cols-[1fr_0.5fr] md:px-20 text-white">
+        <div className="flex flex-col justify-center top-0 items-center md:items-start md:justify-start ">
+          <h1 className="text-white text-center text-[64px] md:text-[72px] leading-tight font-bold">
             Where AI Meets Land
           </h1>
 
-          <div className="flex gap-6 mt-8 text-sm">
+          <div className="flex flex-col gap-6 mt-8 text-sm md:flex-row">
             <button
               type="button"
-              className="bg-white text-black py-5 px-6 rounded-md font-semibold shadow"
-            >
+              className="bg-white text-black py-5 px-6 rounded-md font-semibold shadow">
               GET STARTED FOR FREE
             </button>
 
@@ -53,15 +52,15 @@ export default function Hero() {
             </button>
           </div>
         </div>
-        <div className="self-end overflow-hidden">
-          
-          <Image src={pinLoc} alt="pinLocation" className="absolute z-20 left-[79.2%] top-[58%]" />
-          <Image src={rectangle} alt="Rectangle" className="absolute z-0 left-[55%] top-[15%]" />
-          <Image src={line1} alt="Line1" className="absolute z-0 left-[57%] top-[15%]" />
-          <Image src={line2} alt="Line2" className="absolute z-0 left-[55%] top-[50%]" />
-          <Image src={line3} alt="Line3" className="absolute z-0 left-[97%] top-[20%]" />
-          <Image src={pinHero} alt="Rectangle" className="absolute z-20 left-[70%] top-[20%]" />
-          <div className="absolute text-yellow-500 w-[83] z-20 left-[96%] top-[55%] rotate-270">1,208 sq ft</div>
+
+        <div className="">
+          <Image src={pinLoc} alt="pinLocation" className="absolute z-20 left-[50%] top-[75%] md:left-[79.2%] md:top-[58%]" />
+          <Image src={rectangle} alt="Rectangle" className="absolute z-0 left-[20%] top-[37%] rotate-90 md:rotate-0 md:left-[55%] md:top-[15%]" />
+          <Image src={line1} alt="Line1" className="absolute z-0 rotate-90 left-[50%] top-[75%] md:rotate-0  md:left-[57%] md:top-[15%]" />
+          <Image src={line2} alt="Line2" className="absolute z-0 rotate-90 left-[20%] top-[40%] md:rotate-0  md:left-[55%] md:top-[50%]" />
+          <Image src={line3} alt="Line3" className="hidden md:block absolute z-0 rotate-90 md:rotate-0  left-[97%] top-[20%]" />
+          <Image src={pinHero} alt="Hero Pin" className="absolute z-20 left-[40.5%] top-[37%] md:left-[70%] md:top-[20%]" />
+          <div className="hidden md:block absolute text-yellow-500 w-[83] z-20 left-[96%] top-[55%] rotate-270">1,208 sq ft</div>
         </div>
       </div>
 
