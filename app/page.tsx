@@ -1,7 +1,7 @@
 import Image from "next/image";
-import LandingPage from "@/pages/landingpage";
+import LandingPage from "@/app/landing/page";
 import Footer from "@/src/components/footer";
-import AboutPage from "@/pages/aboutPage";
+import AboutPage from "@/app/about/page";
 
 export default function Home() {
   return (
