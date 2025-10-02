@@ -28,7 +28,7 @@ export default function LandingSection2() {
     ]
 
     return (
-        <div className="bg-white w-[393px] p-[10px] md:p-[100px] gap-[10px] md:w-[1440px]">
+        <div className="bg-white p-[10px] md:p-[100px] gap-[10px]">
             
             <h1 className="text-[32px] md:text-[48px] font-medium leading-[64px] mb-10 text-center md:text-left">
                 The All-In-One Property Intelligence Platform
@@ -53,7 +53,7 @@ export default function LandingSection2() {
                                     <Image
                                         src={logo}
                                         alt="logo"
-                                        className="absolute left-0 top-0 h-full w-full object-contain opacity-100 group-hover:opacity-100 transition-opacity duration-300 [clip-path:inset(0_50%_0_0)]"
+                                        className="absolute left-0 top-0 h-full  object-contain opacity-100 group-hover:opacity-100 transition-opacity duration-300 [clip-path:inset(0_50%_0_0)]"
                                     />
                                 </div>
                                 
@@ -68,7 +68,7 @@ export default function LandingSection2() {
                                     <Image
                                         src={logo}
                                         alt="logo"
-                                        className="absolute left-0 top-0 h-full w-full object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-300 [clip-path:inset(0_50%_0_0)]"
+                                        className="absolute left-0 top-0 h-full object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-300 [clip-path:inset(0_50%_0_0)]"
                                     />
                                 </div>
                                 
@@ -87,7 +87,7 @@ export default function LandingSection2() {
 
 
 
-                <div className="flex flex-col m-auto gap-4 w-[323px] md:w-[498px]">
+                <div className="flex flex-col m-auto gap-4">
                     <Image src={platformImages[activePlatform]} alt="Property visualization" className="rounded-md shadow" />
                     <p className="text-justify text-[18px] leading-[28px]">
                         {platformDescriptions[activePlatform]}

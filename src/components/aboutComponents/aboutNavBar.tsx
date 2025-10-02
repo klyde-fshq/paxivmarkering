@@ -36,10 +36,10 @@ export default function AboutNavBar() {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden mt-4 flex flex-col gap-4 text-[14px]">
-          <a href="/" className="hover:text-yellow-500">Home</a>
-          <a href="/about" className="hover:text-yellow-500">Company</a>
-          <a href="/contact" className="hover:text-yellow-500">Contact Us</a>
-          <a href="#" className="hover:text-yellow-500">Login</a>
+          <a href="/" className="hover:text-[#FFAA20]">Home</a>
+          <a href="/about" className="hover:text-[#FFAA20]">Company</a>
+          <a href="/contact" className="hover:text-[#FFAA20]">Contact Us</a>
+          <a href="#" className="hover:text-[#FFAA20]">Login</a>
           <button className="mt-2 text-white bg-yellow-400 rounded-sm h-[45px] w-full">
             Create Account
           </button>
