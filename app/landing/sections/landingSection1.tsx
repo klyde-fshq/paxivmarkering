@@ -38,6 +38,7 @@ export default function LandingSection2() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[37px]">
                 
                 <div className="space-y-6 order-last px-10 md:px-0 md:order-first ">
+                    
                     {[
                         "Mapping",
                         "PAXIV AI",
@@ -87,7 +88,7 @@ export default function LandingSection2() {
 
 
 
-                <div className="flex flex-col m-auto gap-4">
+                <div className="gap-8 px-12 w-full">
                     <Image src={platformImages[activePlatform]} alt="Property visualization" className="rounded-md shadow" />
                     <p className="text-justify text-[18px] leading-[28px]">
                         {platformDescriptions[activePlatform]}
