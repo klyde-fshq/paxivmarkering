@@ -34,7 +34,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PAXIV",
+  title: "PAXIV – Real Estate Mapping & Data",
   description: "PAXIV ALL IN ONE INTELLIGENCE PLATFORM",
 };
 

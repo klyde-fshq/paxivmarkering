@@ -75,10 +75,11 @@ export default function ContactForm() {
           transition={{ delay: 1.2, type: "spring", stiffness: 100 }}
           className="hidden md:block absolute z-20 left-[10%] bottom-[5%] flex flex-col items-center py-[25px]"
         >
-          <Image src={pinHero} alt="pinHero" />
+          <Image loading="lazy" src={pinHero} alt="pinHero" />
           
             <Image
               src={pinLoc}
+              loading="lazy"
               alt="pinLocation"
               className="absolute z-20 left-[50%] bottom-0 shadow-[0px_0px_100px_-3px_rgba(234,_179,_8,_0.5)]"
             />

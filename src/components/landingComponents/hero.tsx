@@ -22,6 +22,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0 max-h-[1104px] lg:max-h-[1104px] overflow-hidden">
         <Image
           src={heroBg}
+          
           alt="Hero background"
           fill
           className="hidden lg:block object-cover object-right"
@@ -48,8 +49,8 @@ export default function Hero() {
             1,208 sq ft
           </h1>
           
-          <div className="absolute flex flex-col z-10 justify-center items-center top-[0] sm:top-[10%] left-[40%] lg:left-[200px] lg:top-[10%] lg:rotate-0 animate-slideIn-right delay-5s">
-            <Image src={pinHero} alt="pinHero" className="z-10" />
+          <div className="absolute flex flex-col z-10 justify-center items-center top-[0] sm:top-[10%] left-[40%] lg:left-[200px] lg:top-[10%] lg:rotate-0 animate-slideIn-right">
+            <Image loading="lazy" src={pinHero} alt="pinHero" className="z-10" />
             <Image src={pinLoc} alt="pinLocation" className="z-10" />
             
           </div>
