@@ -15,7 +15,7 @@ export default function Navbar() {
         <Image src={logo} alt="logo" className="w-[120px] h-auto" />
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-8 text-[14px]">
+        <div className="hidden md:flex gap-8 text-[14px]">
           <a href="/">Home</a>
           <a href="/about">Company</a>
           <a href="/contact">Contact Us</a>
@@ -35,12 +35,12 @@ export default function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="md:hidden flex flex-col items-center gap-4 py-6 bg-black text-[14px]">
+        <div className="md:hidden flex flex-col px-5 gap-4 py-6 bg-black text-[14px]">
           <a href="/" onClick={() => setIsOpen(false)}>Home</a>
           <a href="/about" onClick={() => setIsOpen(false)}>Company</a>
           <a href="/contact" onClick={() => setIsOpen(false)}>Contact Us</a>
           <a href="#" onClick={() => setIsOpen(false)}>Login</a>
-          <button className="mt-2 text-white bg-yellow-400 rounded-sm h-[40px] w-[131px]">
+          <button className="mt-2 text-white bg-yellow-400 rounded-sm h-[40px] w-full">
             Create Account
           </button>
         </div>

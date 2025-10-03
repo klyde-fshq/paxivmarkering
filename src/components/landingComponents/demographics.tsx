@@ -8,7 +8,7 @@ import Image from "next/image"
 import chevron_Up from "../../assets/Chevron_Up.png"
 
 export default function Demographics() {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(true)
 
     return (
         <div className="border-gray-500 border-b-1 px-[18px] py-[20px] gap-[24px]">
