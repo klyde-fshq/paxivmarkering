@@ -1,13 +1,13 @@
 'use client'
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image"
 import mapping from "@/src/assets/mapping.png"
 import paxivai from "@/src/assets/paxivAI.svg"
 import oneclick from "@/src/assets/oneClickSkip.svg"
 import dealroom from "@/src/assets/dealRoom.svg"
 import offmarket from "@/src/assets/offMarketOpportunities.svg"
-import logo from "@/src/assets/fireflyLogo.jpg"
+import logo from "@/src/assets/X.png"
 
 
 export default function LandingSection2() {
@@ -26,6 +26,14 @@ export default function LandingSection2() {
         "Organize projects, data, and deals in one secure, collaborative hub.",
         "Access exclusive, hidden deals before they hit the market."
     ]
+
+    // Auto-advance activePlatform every 80 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActivePlatform(prev => (prev + 1) % platformImages.length);
+        }, 8000); // 80 seconds
+        return () => clearInterval(interval);
+    }, [platformImages.length]);
 
     return (
         <div className="bg-white p-[10px] md:p-[100px] gap-[10px]">
@@ -88,7 +96,7 @@ export default function LandingSection2() {
 
 
 
-                <div className="gap-8 px-12 w-full">
+                <div className="gap-8 px-5 lg:px-12 w-full">
                     <Image src={platformImages[activePlatform]} alt="Property visualization" className="rounded-md shadow" />
                     <p className="text-justify text-[18px] leading-[28px]">
                         {platformDescriptions[activePlatform]}
