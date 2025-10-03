@@ -11,7 +11,7 @@ export default function WorkforceClass() {
     ]
 
     return (
-        <div className="gap-[10px] md:gap-[16px]">
+        <div className="relative gap-[10px] md:gap-[16px]">
             <h2 className="text-[18px] md:text-[24px] align-middle text-[#FFAA20]">Workforce Class</h2>
             <div className="flex flex-col gap-[18px]">
                 <div className="flex flex-col gap-[8px] ">
@@ -20,7 +20,7 @@ export default function WorkforceClass() {
                         <h1>- 85.0%</h1>
                         <h1 className="text-gray-400">± 0.9%</h1>
                     </div>
-                    <div className="bg-[#FFC657] h-[18px] w-[238px] md:w-[1076px] max-w-full" />
+                    <div className="bg-[#FFC657] h-[18px] w-[178px] md:w-[65vw] max-w-[1076px]" />
                 </div>
                 <div>
                     <div className="flex gap-[8px] text-[9.89px] leading-[16px] align-left md:text-[12px]">
@@ -28,7 +28,7 @@ export default function WorkforceClass() {
                         <h1>- 85.0%</h1>
                         <h1 className="text-gray-400">± 0.9%</h1>
                     </div>
-                    <div className="bg-[#FFC657] h-[18px] w-[27px]  max-w-full" />
+                    <div className="bg-[#FFC657] h-[18px] w-[27px]  " />
                 </div>
                 <div>
                     <div className="flex gap-[8px] text-[9.89px] leading-[16px] align-left md:text-[12px]">
@@ -36,7 +36,7 @@ export default function WorkforceClass() {
                         <h1>- 85.0%</h1>
                         <h1 className="text-gray-400">± 0.9%</h1>
                     </div>
-                    <div className="bg-[#FFC657] h-[18px] w-[13px] max-w-full" />
+                    <div className="bg-[#FFC657] h-[18px] w-[13px] " />
                 </div>
                 <div>
                     <div className="flex gap-[8px] text-[9.89px] leading-[16px] align-left md:text-[12px]">
@@ -44,7 +44,7 @@ export default function WorkforceClass() {
                         <h1>- 85.0%</h1>
                         <h1 className="text-gray-400">± 0.9%</h1>
                     </div>
-                    <div className="bg-[#FFC657] h-[18px] w-[53px] max-w-full" />
+                    <div className="bg-[#FFC657] h-[18px] w-[53px] " />
                 </div>
                 <div>
                     <div className="flex gap-[8px] text-[9.89px] leading-[16px] align-left md:text-[12px]">
@@ -52,7 +52,7 @@ export default function WorkforceClass() {
                         <h1>- 85.0%</h1>
                         <h1 className="text-gray-400">± 0.9%</h1>
                     </div>
-                    <div className="bg-[#FFC657] h-[18px] w-[43px] max-w-full" />
+                    <div className="bg-[#FFC657] h-[18px] w-[43px] " />
                 </div>
 
                 <div className="text-gray-500">

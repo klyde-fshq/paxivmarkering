@@ -52,7 +52,7 @@ export default function Footer() {
                 
                 </div>
                 <hr />
-                <p className="py-[24px] text-center">Copyright © 2025 PAXIV | All Rights Reserved | Terms and Conditions | Privacy Policy</p>
+                <p className="py-[24px] px-[20px] text-center">Copyright © 2025 PAXIV | All Rights Reserved | Terms and Conditions | Privacy Policy</p>
             </div>
             
             

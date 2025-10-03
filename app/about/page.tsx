@@ -23,7 +23,7 @@ export default function AboutPage() {
                     className="grid grid-cols-1 gap-8 items-start sm:gap-10 lg:grid-cols-[1fr_2fr] lg:gap-20"
                     >
                     {/* Title */}
-                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-medium leading-tight text-yellow-500">
+                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-medium leading-tight text-[#FFAA20]">
                         {item}
                     </h1>
 

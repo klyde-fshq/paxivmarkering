@@ -26,10 +26,10 @@ export default function Ownership() {
 
             {/* Expandable content */}
             {isOpen && (
-                <div className="grid md:grid-cols-3 gap-[40px] md:gap-[200px] text-[#FFAA20] mt-4">
+                <div className="grid md:grid-cols-3 gap-[40px] md:gap-[100px] text-[#FFAA20] mt-4">
                     <div className="gap-[10px] md:gap-[16px]">
                         <h2 className="text-[24px]">Name</h2>
-                        <div className="text-[25px] md:text-[21px] lg:text-[32px] leading-[43px] md:leading-[40px] gap-[10px] md:gap-[16px]">
+                        <div className="text-[7vw] md:text-[21px] lg:text-[32px] leading-[43px] md:leading-[40px] gap-[10px] md:gap-[16px]">
                             <h1>John Doe, LLC</h1>
                             <h1>John Doe</h1>
                         </div>
@@ -37,7 +37,7 @@ export default function Ownership() {
                     
                     <div className="gap-[10px] md:gap-[16px]">
                         <h2 className="text-[24px]">Email(s)</h2>
-                        <div className="text-[25px] md:text-[21px] lg:text-[32px] leading-[43px] md:leading-[40px] gap-[10px] md:gap-[16px]">
+                        <div className="text-[7vw] md:text-[21px] lg:text-[26px] leading-[43px] md:leading-[40px] gap-[10px] md:gap-[16px]">
                             <h1>johndoe@mail.com</h1>
                             <h1>jdoeinvestments@mail.com</h1>
                             <h1>doefamily@mail.com</h1>
@@ -46,7 +46,7 @@ export default function Ownership() {
                     
                     <div className="gap-[10px] md:gap-[16px]">
                         <h2 className="text-[24px]">Phone</h2>
-                        <div className="text-[25px] md:text-[21px] lg:text-[32px] leading-[43px] md:leading-[40px] gap-[10px] md:gap-[16px]">
+                        <div className="text-[7vw] md:text-[21px] lg:text-[32px] leading-[43px] md:leading-[40px] gap-[10px] md:gap-[16px]">
                             <h1>555-123-4567</h1>
                             <h1>555-987-6543</h1>
                             <h1>555-246-8100</h1>

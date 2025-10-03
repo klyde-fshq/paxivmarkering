@@ -4,6 +4,7 @@ import localFont from 'next/font/local'
 
 import playCircle from "@/src/assets/Play_Circle.png"
 import heroBg from "@/src/assets/hero.png"
+import heroBgMobile from "@/src/assets/heroBg_Mobile.png"
 import LogoStrip from "./logoStrip"
 import pinHero from "@/src/assets/heroPic.svg"
 import rectangle from "@/src/assets/Rectangle 2.svg"
@@ -16,16 +17,45 @@ import pinLoc from "@/src/assets/pinLocation.svg"
 
 export default function Hero() {
   return (
-    <div className="h-[1098px] md:h-[972px] relative overflow-hidden">
+    <div className="h-[1098px] lg:h-[1104px] relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 max-h-[1104px] lg:max-h-[1104px] overflow-hidden">
         <Image
           src={heroBg}
           alt="Hero background"
           fill
-          className="object-cover object-left"
+          className="hidden lg:block object-cover object-right"
           priority
         />
+        <Image
+          src={heroBgMobile}
+          alt="Hero background Mobile"
+          fill
+          className="lg:hidden object-cover object-bottom"
+          priority
+        />
+        
+        
+
+        
+
+        <div className="relative z-1 top-[55%] left-[-10%] sm:top-[30%] sm:left-[-100px] lg:top-[15%] lg:left-[55%] md:rotate-0 ">
+          <Image src={rectangle} alt="Rectangle" className="rotate-90 lg:rotate-0 animate-fadeUp" />
+          <Image src={line1} alt="Line1" className="hidden lg:block absolute left-[-200px] sm:left-[-150px] md:left-[1%] top-[10%] md:top-[5px] rotate-[13deg] md:rotate-0 animate-scaleUp"/>
+          <Image src={line2} alt="Line2" className="hidden lg:block absolute left-[-1%] top-[30px] md:top-[40%] animate-scaleUp"/>
+          <Image src={line3} alt="Line3" className="hidden lg:block absolute left-[690px] sm:left-[710px] md:left-[600px] top-[150px] md:top-[0%] rotate-[327deg] md:rotate-0 animate-scaleUp"/>
+          <h1 className="hidden lg:block text-[#FFC657] text-[16px] rotate-[60deg] md:rotate-[270deg] absolute left-[500px] md:left-[590px] top-[250px] md:top-[50%]">
+            1,208 sq ft
+          </h1>
+          
+          <div className="absolute flex flex-col z-10 justify-center items-center top-[0] sm:top-[10%] left-[40%] lg:left-[200px] lg:top-[10%] lg:rotate-0 animate-slideIn-right">
+            <Image src={pinHero} alt="pinHero" className="z-10" />
+            <Image src={pinLoc} alt="pinLocation" className="z-10" />
+            
+          </div>
+      </div>
+      
+
       </div>
 
       {/* Gradient Overlays */}
@@ -33,29 +63,26 @@ export default function Hero() {
       <div className="absolute inset-x-0 bottom-0 h-1/2 z-10 pointer-events-none bg-gradient-to-t from-black to-transparent" />
 
       {/* Content */}       
-      <div className="relative z-20 w-full justify-between">
+      <div className="relative z-20 justify-between">
           <Navbar />
       </div>
 
-      <div className="relative grid md:grid-cols-[1.5fr_0.5fr] pt-[200px] px-[100px] z-20">
-
-        
-
+      <div className="relative pt-[50px] px-[50px] lg:pt-[200px] lg:px-[100px] z-20">
         <div className="gap-[36px]">
-          <h1 className="text-[64px] font-bold md:text-[72px] text-white">Where AI Meets Land</h1>
-          <div className="flex flex-col md:flex-row gap-[12px] md:gap-[36px]">
-            <button className="bg-white px-[18px] py-[14px] gap-[8px] rounded-[8px] align-middle text-[14px] leading-[24px]" >GET STARTED FOR FREE</button>
-            <button  className="flex bg-[#DBA13F] px-[18px] py-[14px] gap-[8px] rounded-[8px] align-middle text-[14px] leading-[24px] justify-center items-center" >
+          <h1 className="text-[52px] sm:text-[62px] text-center lg:text-start font-bold md:text-[72px] text-white animate-fadeUp">Where AI Meets Land</h1>
+          <div className="flex flex-col lg:flex-row gap-[12px] md:gap-[36px]">
+            <button className="bg-white px-[18px] py-[14px] gap-[8px] rounded-[8px] align-middle text-[14px] leading-[24px] animate-fadeUp" >GET STARTED FOR FREE</button>
+            <button  className="flex bg-[#DBA13F] px-[18px] py-[14px] gap-[8px] rounded-[8px] align-middle text-[14px] leading-[24px] justify-center items-center animate-fadeUp" >
               <Image src={playCircle} alt="Play" className="h-[16px] w-[16px]"/>
               SEE HOW IT WORKS
             </button>
           </div>
+          
         </div>
 
-        <div className="flex flex-col justify-center items-center">
-          <Image src={pinHero} alt="pinHero" className="" />
-          <Image src={pinLoc} alt="pinLocation" className="" />
-        </div>
+        
+
+        
       </div>
     </div>
     
@@ -64,60 +91,3 @@ export default function Hero() {
 
 
 
-
-{/* <div className="relative h-[1098px] md:w-[1440px] md:h-[1104px] flex justify-center overflow-hidden" >
-
-      <div className="absolute inset-0 z-0  rotate-90 md:rotate-0 md:w-[1440px] md:h-[1104px]">
-        <Image src={heroBg} alt="Hero background" fill className="object-cover" priority />
-      </div>
-
-      <div className="absolute inset-x-0 top-0 h-1/2 z-10 pointer-events-none bg-gradient-to-b from-black/90 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 h-1/2 z-10 pointer-events-none bg-gradient-to-t from-black to-transparent" />
-
-      <div className="relative z-20  flex flex-col justify-between h-full">
-        <div className="w-full">
-          <Navbar />
-        </div>
-
-      <div className="flex flex-col  md:grid md:grid-cols-[1fr_0.5fr] md:px-20 text-white">
-        <div className="flex flex-col justify-center top-0 items-center md:items-start md:justify-start ">
-          <h1 className="text-white text-center text-[64px] md:text-[72px] leading-tight font-bold">
-            Where AI Meets Land
-          </h1>
-
-          <div className="flex flex-col gap-6 mt-8 text-sm md:flex-row">
-            <button
-              type="button"
-              className="bg-white text-black py-5 px-6 rounded-md font-semibold shadow">
-              GET STARTED FOR FREE
-            </button>
-
-            <button
-              type="button"
-              className="flex items-center gap-3 bg-yellow-500 text-black py-3 px-6 rounded-md font-semibold shadow"
-            >
-              <Image src={playCircle} alt="Play" width={20} height={20} />
-              SEE HOW IT WORKS
-            </button>
-          </div>
-        </div>
-
-        <div className="">
-          <Image src={pinLoc} alt="pinLocation" className="absolute z-20 left-[50%] top-[75%] md:left-[79.2%] md:top-[58%]" />
-          <Image src={rectangle} alt="Rectangle" className="absolute z-0 left-[20%] top-[37%] rotate-90 md:rotate-0 md:left-[55%] md:top-[15%]" />
-          <Image src={line1} alt="Line1" className="absolute z-0 rotate-90 left-[50%] top-[75%] md:rotate-0  md:left-[57%] md:top-[15%]" />
-          <Image src={line2} alt="Line2" className="absolute z-0 rotate-90 left-[20%] top-[40%] md:rotate-0  md:left-[55%] md:top-[50%]" />
-          <Image src={line3} alt="Line3" className="hidden md:block absolute z-0 rotate-90 md:rotate-0  left-[97%] top-[20%]" />
-          <Image src={pinHero} alt="Hero Pin" className="absolute z-20 left-[40.5%] top-[37%] md:left-[70%] md:top-[20%]" />
-          <div className="hidden md:block absolute text-[#FFAA20] w-[83] z-20 left-[96%] top-[55%] rotate-270">1,208 sq ft</div>
-        </div>
-      </div>
-
-
-      <div className="w-full flex justify-center self-end">
-          <div className="w-[100%] bg-black/80 rounded-lg z-20">
-            <LogoStrip />
-          </div>
-        </div>
-      </div>
-    </div> */}

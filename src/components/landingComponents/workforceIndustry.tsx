@@ -12,7 +12,7 @@ export default function WorkforceIndustry() {
     ]
 
     return (
-        <div className="w-full max-w-full overflow-x-auto">
+        <div className="relative gap-[10px] md:gap-[16px]">
             <h2 className="text-[18px] leading-[24px] md:text-[24px] align-middle text-[#FFAA20]">Workforce Industry</h2>
             <div className="flex flex-col gap-[18px]">
                 <div className="flex flex-col gap-[8px] ">

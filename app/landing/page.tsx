@@ -10,15 +10,16 @@ import Footer from "@/src/components/footer";
 
 export default function LandingPage() {
   return (
-   <div className="bg-black items-center justify-center">
-      <div className="">
+   <div className="bg-black">
+      <div className="z-0 ">
           <Hero />
+          <LogoStrip />
           <div className="z-20">
-            {/* <LandingSection1 />
+            <LandingSection1 />
             <LandingSection2 />
             <LandingSection3 />
             <LandingSection4 />
-            <Faq /> */}
+            <Faq />
             <Footer />
           </div>
       </div>

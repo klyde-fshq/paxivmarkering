@@ -13,19 +13,30 @@ import clearcreek from "@/src/assets/Logo/Clearcreek.png"
 
 
 export default function LogoStrip() {
+
+    const logos = [
+        { src: DHI, alt: "DHI" },
+        { src: Capital, alt: "Capital" },
+        { src: visionary, alt: "Visionary" },
+        { src: wadsworth, alt: "Wadsworth" },
+        { src: remax, alt: "Remax" },
+        { src: backman, alt: "Backman" },
+        { src: colewest, alt: "Colewest" },
+        { src: fullstack, alt: "Fullstack" },
+        { src: dakota, alt: "Dakota" },
+        { src: clearcreek, alt: "Clearcreek" },
+    ]
+
     return (
         <div className="flex  space-between gap-20px py-52px px-81px border-1 border-black border-dashed overflow-x-hidden">
-            <div className="flex py-12 animate-marquee whitespace-nowrap">
-                <span className="mx-4 text-4xl"><Image src={DHI} alt="DHI" className="w-full h-full" /></span>
-                <span className="mx-4 text-4xl"><Image src={Capital} alt="Capital" /></span>
-                <span className="mx-4 text-4xl"><Image src={visionary} alt="visionary" /></span>
-                <span className="mx-4 text-4xl"><Image src={wadsworth} alt="wadsworth" /></span>
-                <span className="mx-4 text-4xl"><Image src={remax} alt="remax" /></span>
-                <span className="mx-4 text-4xl"><Image src={backman} alt="backman" /></span>
-                <span className="mx-4 text-4xl"><Image src={colewest} alt="colewest" /></span>
-                <span className="mx-4 text-4xl"><Image src={fullstack} alt="fullstack" /></span>
-                <span className="mx-4 text-4xl"><Image src={dakota} alt="dakota" /></span>
-                <span className="mx-4 text-4xl"><Image src={clearcreek} alt="clearcreek" /></span>
+            <div className="flex py-10 animate-marquee whitespace-nowrap">
+                {logos.map((logo, i) => (
+                    <Image key={i} src={logo.src} alt={logo.alt} className="px-5" />
+                ))}
+                {/* Repeat logos for seamless scrolling */}
+                {logos.map((logo, i) => (
+                    <Image key={i} src={logo.src} alt={logo.alt} className="px-5" />
+                ))}
             </div>
         </div>
     )
