@@ -34,7 +34,7 @@ export default function AboutPage() {
                     </div>
                 ))}
             </div>
-            <div className="lg:w-[1440px] md:w-full sm:w-full xs:w-full">
+            <div className="">
                 <Footer />
             </div>
             
