@@ -65,7 +65,7 @@ export default function Hero() {
           <Navbar />
       </div>
 
-      <div className="relative pt-[50px] px-[50px] lg:pt-[200px] lg:px-[100px] z-20">
+      <div className="relative pt-[50px] px-[50px] md:px-[100px] lg:pt-[200px] z-20">
         <div className="gap-[36px]">
           <h1 className="text-[52px] sm:text-[62px] text-center lg:text-start font-bold md:text-[72px] text-white animate-fadeUp">Where AI Meets Land</h1>
           <div className="flex flex-col lg:flex-row gap-[12px] md:gap-[36px]">
