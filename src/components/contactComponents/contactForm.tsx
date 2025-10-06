@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { motion } from "framer-motion"
-import Navbar from "../navbar"
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Navbar from "../navbar";
 
-import heroBg from "@/src/assets/contactBackground.svg"
-import pinHero from "@/src/assets/Contact-Location.svg"
-import rectangle from "@/src/assets/contactRectangle.svg"
-import line1 from "@/src/assets/contact-line1.svg"
-import line2 from "@/src/assets/contact-line2.svg"
-import pinLoc from "@/src/assets/pinLocation.svg"
-import rectangle2 from "@/src/assets/contact2Rectangle.svg"
+import heroBg from "@/src/assets/contactBackground.svg";
+import pinHero from "@/src/assets/Contact-Location.svg";
+import rectangle from "@/src/assets/contactRectangle.svg";
+import line1 from "@/src/assets/contact-line1.svg";
+import line2 from "@/src/assets/contact-line2.svg";
+import pinLoc from "@/src/assets/pinLocation.svg";
+import rectangle2 from "@/src/assets/contact2Rectangle.svg";
 
 export default function ContactForm() {
   return (
@@ -76,23 +76,18 @@ export default function ContactForm() {
           className="hidden md:block absolute z-20 left-[10%] bottom-[5%] flex flex-col items-center py-[25px]"
         >
           <Image loading="lazy" src={pinHero} alt="pinHero" />
-          
-            <Image
-              src={pinLoc}
-              loading="lazy"
-              alt="pinLocation"
-              className="absolute z-20 left-[50%] bottom-0 shadow-[0px_0px_100px_-3px_rgba(234,_179,_8,_0.5)]"
-            />
+
+          <Image
+            src={pinLoc}
+            loading="lazy"
+            alt="pinLocation"
+            className="absolute z-20 left-[50%] bottom-0 shadow-[0px_0px_100px_-3px_rgba(234,_179,_8,_0.5)]"
+          />
         </motion.div>
       </div>
 
       {/* Top gradient */}
       <div className="absolute inset-x-0 top-0 h-1/2 z-10 pointer-events-none bg-gradient-to-b from-black/90 to-transparent" />
-
-      {/* Navbar */}
-      <div className="relative z-20 w-full justify-between">
-        <Navbar />
-      </div>
 
       {/* Content */}
       <div className="grid relative md:grid-cols-2 px-4 md:pl-[100px] pt-10 md:pt-30 lg:gap-[50px] z-20">
@@ -181,5 +176,5 @@ export default function ContactForm() {
         </motion.div>
       </div>
     </div>
-  )
+  );
 }
