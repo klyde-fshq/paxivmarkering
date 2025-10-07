@@ -4,39 +4,13 @@ import { useState } from "react";
 import Image from "next/image";
 import chevron_Up from "../../assets/Chevron_Up.png";
 import zoneCode from "../../assets/zoneCode.png";
-import bldgHeight from "../../assets/bldgHeight.png";
-import setBackIcon from "../../assets/setback.png";
-import widthLogo from "../../assets/widthLogo.png";
+import {
+  zoningMinMax,
+  permittedUses,
+} from "../../assets/datasets/landingSection3";
 
 export default function Zoning() {
   const [isOpen, setIsOpen] = useState(true);
-
-  const permittedUses = [
-    "Manufacturing",
-    "Storage",
-    "Research",
-    "Distribution",
-    "Showroom",
-    "Vehicle Services",
-  ];
-
-  const zoningMinMax = [
-    {
-      title: "Max Bldg. Height",
-      value: "40 ft",
-      image: bldgHeight,
-    },
-    {
-      title: "Min. Rear Setback",
-      value: "10 ft",
-      image: setBackIcon,
-    },
-    {
-      title: "Min. Lot Width",
-      value: "40 ft",
-      image: widthLogo,
-    },
-  ];
 
   return (
     <div className="border-gray-500 border-b-1 px-[18px] py-[20px] gap-[24px]">

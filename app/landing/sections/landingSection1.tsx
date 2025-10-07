@@ -84,7 +84,7 @@ export default function LandingSection2() {
             ))}
           </div>
 
-          <div className="gap-8 px-5 lg:px-12 w-full">
+          <div className="flex flex-col gap-8 px-5 lg:px-12 w-full justify-center items-center">
             <Image
               src={platformImages[activePlatform]}
               alt="Property visualization"

@@ -10,18 +10,14 @@ import Footer from "@/src/components/footer";
 
 export default function LandingPage() {
   return (
-    <div className="bg-black">
-      <div className="">
-        {/* <Hero /> */}
-        {/* <LogoStrip /> */}
-        <div className="">
-          <LandingSection1 />
-          <LandingSection2 />
-          <LandingSection3 />
-          <LandingSection4 />
-          <Faq />
-        </div>
-      </div>
+    <div className="bg-black flex flex-col">
+      <Hero />
+      <LogoStrip />
+      <LandingSection1 />
+      <LandingSection2 />
+      <LandingSection3 />
+      <LandingSection4 />
+      <Faq />
     </div>
   );
 }

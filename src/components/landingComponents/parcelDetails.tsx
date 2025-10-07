@@ -2,29 +2,11 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import saleSign from "../../assets/saleSign.png";
 import chevron_Up from "../../assets/Chevron_Up.png";
+import { parcelDetails } from "../../assets/datasets/landingSection3";
 
 export default function ParcelDetails() {
   const [isOpen, setIsOpen] = useState(true);
-
-  const parcelDetails = [
-    {
-      title: "Parcel Sq Ft",
-      value: "174,240 Sq Ft",
-      image: null,
-    },
-    {
-      title: "Current Use",
-      value: "Vacant Land",
-      image: null,
-    },
-    {
-      title: "Parcel Value",
-      value: "$1,045,440",
-      image: saleSign,
-    },
-  ];
 
   return (
     <div className="border-gray-500 border-b-1 px-[18px] py-[20px] gap-[24px]">

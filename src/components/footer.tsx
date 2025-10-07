@@ -6,6 +6,7 @@ import instagramIcon from "@/src/assets/Instagram.svg";
 import linkedinIcon from "@/src/assets/LinkedIn.svg";
 import twitterIcon from "@/src/assets/Twitter.svg";
 import youtubeIcon from "@/src/assets/YouTube.svg";
+import { Button } from "./ui/button";
 
 export default function Footer() {
   const socials = [
@@ -32,9 +33,9 @@ export default function Footer() {
             platform—covering everything from land acquisition to project
             disposition, powered by AI
           </h1>
-          <button className="bg-[#DBA13F] px-[18px] py-[14px] gap-[8px] rounded-[8px] text-[14px] leading-[24px] tracking-[2%] align-middle">
+          <Button variant={"default"} size={"lg"}>
             Create Account
-          </button>
+          </Button>
         </div>
       </div>
 

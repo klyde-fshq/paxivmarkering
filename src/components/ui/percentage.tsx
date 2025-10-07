@@ -32,7 +32,7 @@ export default function Percentage({
               className="flex flex-col justify-center items-center"
             >
               <div className="border-[1px] h-[8px] w-[0px]" />
-              <h1>{percentage2}%</h1>
+              <h1>{percentage2}</h1>
             </div>
           ))}
         </div>

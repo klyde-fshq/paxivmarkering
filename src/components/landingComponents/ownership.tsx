@@ -3,22 +3,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import chevron_Up from "../../assets/Chevron_Up.png";
+import { ownershipData } from "../../assets/datasets/landingSection3";
 
 export default function Ownership() {
   const [isOpen, setIsOpen] = useState(true);
-
-  const ownershipData = [
-    { title: "Name", value: ["John Doe, LLC", "John Doe"] },
-    {
-      title: "Email(s)",
-      value: [
-        "johndoe@mail.com",
-        "jdoeinvestments@mail.com",
-        "doefamily@mail.com",
-      ],
-    },
-    { title: "Phone", value: ["555-123-4567", "555-987-6543", "555-246-8100"] },
-  ];
 
   return (
     <div className="border-gray-500 border-b-1 px-[18px] py-[20px] gap-[24px]">
