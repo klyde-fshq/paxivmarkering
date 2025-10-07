@@ -22,15 +22,26 @@ export default function HeroContent() {
           </Button>
         </div>
       </div>
-      <div className="flex px-20 md:justify-end md:items-end">
-        <div className="flex flex-col justify-center items-center m-auto">
+      <div className="flex m-auto px-20 md:justify-end md:items-end">
+        <div className="flex flex-col justify-center items-center m-auto relative">
           <Image
             src={heroPin}
-            height={400}
             alt="heroPin"
-            className="min-h-[400px]"
+            width={260} // ✅ fixed size
+            height={260}
+            className="object-none pointer-events-none min-w-[260px] min-h-[260px]"
+            loading="lazy"
+            decoding="async"
           />
-          <Image src={pinLoc} alt="pinLoc" />
+          <Image
+            src={pinLoc}
+            alt="pinLoc"
+            width={80} // ✅ fixed size
+            height={80}
+            className="object-none pointer-events-none min-w-[80px] min-h-[80px] -mt-2"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
       </div>
     </div>
