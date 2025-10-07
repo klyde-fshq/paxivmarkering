@@ -27,7 +27,7 @@ export default function HeroContent() {
           <Image
             src={heroPin}
             alt="heroPin"
-            width={260} // ✅ fixed size
+            width={260}
             height={260}
             className="object-none pointer-events-none min-w-[260px] min-h-[260px]"
             loading="lazy"
@@ -36,7 +36,7 @@ export default function HeroContent() {
           <Image
             src={pinLoc}
             alt="pinLoc"
-            width={80} // ✅ fixed size
+            width={80}
             height={80}
             className="object-none pointer-events-none min-w-[80px] min-h-[80px] -mt-2"
             loading="lazy"
