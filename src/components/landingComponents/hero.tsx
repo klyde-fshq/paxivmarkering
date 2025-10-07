@@ -20,7 +20,7 @@ export default function Hero() {
         <Image
           src={rectangle}
           alt="Rectangle"
-          className=" absolute top-[135px] right-6 z-0 object-contain"
+          className=" absolute top-[135px] right-6 z-0 object-contain fade-in-element"
           loading="lazy"
           decoding="async"
         />
@@ -51,7 +51,7 @@ export default function Hero() {
           height={600}
           className="absolute bottom-[-20%] right-6 z-0 rotate-90 
                object-top pointer-events-none
-               min-w-[600px] min-h-[600px]"
+               min-w-[600px] min-h-[600px] fade-in-element"
           loading="lazy"
           decoding="async"
         />

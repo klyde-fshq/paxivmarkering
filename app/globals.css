@@ -43,15 +43,27 @@ body {
   }
 }
 
-@layer utilities {
-  .animate-fadeUp {
-    animation: fadeUp 3s ease-out;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
-@keyframes fadeUp {
+
+.fade-in-element {
+  animation-delay: 3s;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(-50px);
   }
   100% {
     opacity: 1;
@@ -59,36 +71,24 @@ body {
   }
 }
 
-@layer utilities {
-  .animate-scaleUp {
-    animation: fadeUp 3s ease-in;
-  }
+.fade-in-down {
+  animation-delay: 6s;
+  animation: fadeInDown 1.5s ease-out forwards;
 }
-@keyframes fadeUp {
+
+@keyframes slideInLeft {
   0% {
     opacity: 0;
-    transform: scale(0.2);
+    transform: translateX(-50px);
   }
   100% {
     opacity: 1;
-    transform: scale(1);
+    transform: translateX(0);
   }
 }
 
-@layer utilities {
-  .animate-slideIn-right {
-    animation: slide-In-right 3s ease-in;
-  }
-}
-@keyframes slide-In-right {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.slide-in-left {
+  animation: slideInLeft 1.5s ease-out forwards;
 }
 
 @layer utilities {

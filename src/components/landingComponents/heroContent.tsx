@@ -24,16 +24,13 @@ export default function HeroContent() {
         </div>
       </div>
 
-      {/* Fixed Hero Pin on Bottom-Right */}
       <div className="md:absolute md:bottom-[300px] right-0 md:right-[140px] flex flex-col justify-center items-center z-10">
         <Image
           src={heroPin}
           alt="heroPin"
-          width={260}
-          height={260}
-          className="object-none pointer-events-none min-w-[260px] min-h-[260px]"
-          loading="lazy"
-          decoding="async"
+          width={270}
+          height={270}
+          className="object-none pointer-events-none min-w-[260px] min-h-[260px] fade-in-down"
         />
         <Image
           src={pinLoc}
