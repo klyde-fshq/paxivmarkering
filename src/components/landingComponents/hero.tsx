@@ -1,17 +1,8 @@
 import Image from "next/image";
-import Navbar from "../navbar";
-
-import heroBg from "@/src/assets/hero.png";
-import heroBgMobile from "@/src/assets/heroBg_Mobile.png";
 import rectangle from "@/src/assets/Rectangle 2.svg";
-import rectangleMobile from "@/src/assets/rectangleHeroMobile.svg";
 import line1 from "@/src/assets/Line 1.svg";
 import line2 from "@/src/assets/Line 3.svg";
 import line3 from "@/src/assets/Line 4.svg";
-import line4 from "@/src/assets/LineMobile1.svg";
-import line5 from "@/src/assets/LineMobile2.svg";
-import pinLoc from "@/src/assets/pinLocation.svg";
-import { Button } from "../ui/button";
 import HeroContent from "./heroContent";
 
 export default function Hero() {
