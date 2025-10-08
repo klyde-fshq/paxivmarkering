@@ -39,7 +39,7 @@ body {
   }
   .animate-marquee {
     display: flex;
-    animation: marquee 25s linear infinite;
+    animation: marquee 15s linear infinite;
   }
 }
 
