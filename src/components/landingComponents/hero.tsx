@@ -39,7 +39,7 @@ export default function Hero() {
           alt="Line3"
           className=" absolute bottom-0 right-5 z-0 object-contain opacity-0 fade-in-center"
         />
-        <h5 className=" absolute text-[16px] leading-[24px] tracking-[2%] text-[#FFC657] -right-6 top-[55%] rotate-270">
+        <h5 className=" absolute text-[16px] leading-[24px] tracking-[2%] text-[#FFC657] -right-6 top-[55%] rotate-270 opacity-0 fade-in-center">
           1,208 sq ft
         </h5>
       </div>
