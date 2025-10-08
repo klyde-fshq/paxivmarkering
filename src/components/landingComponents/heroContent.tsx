@@ -2,14 +2,13 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 
 import playCircle from "@/src/assets/Play_Circle.png";
-import heroPin from "@/src/assets/heroPic.svg";
+import heroPin from "@/src/assets/heroPic.png";
 import pinLoc from "@/src/assets/pinLocation.svg";
 
 export default function HeroContent() {
   return (
     <div className="relative z-20 w-full h-full">
-      {/* Text Section */}
-      <div className="relative max-w-[1440px] mx-auto py-[149px] px-[35px] gap-9 md:py-[288px] md:px-[100px] z-20">
+      <div className="relative max-w-[1440px] mx-auto py-[149px] px-[35px] gap-9 md:py-[288px] md:px-[100px] z-20 opacity-0 slide-in-left">
         <h2 className="text-white font-bold text-[64px] leading-[72px] tracking-[-1%] text-center md:text-[72px] md:text-start md:leading-[92px] md:tracking-[2%] pb-3">
           Where AI Meets Land
         </h2>
@@ -28,16 +27,16 @@ export default function HeroContent() {
         <Image
           src={heroPin}
           alt="heroPin"
-          width={270}
-          height={270}
-          className="object-none pointer-events-none min-w-[260px] min-h-[260px] fade-in-down"
+          width={300}
+          height={300}
+          className="object-none pointer-events-none min-w-[300px] min-h-[300px] fade-in-down-hero opacity-0"
         />
         <Image
           src={pinLoc}
           alt="pinLoc"
           width={80}
           height={80}
-          className="object-none pointer-events-none min-w-[80px] min-h-[80px] -mt-2"
+          className="object-none pointer-events-none min-w-[80px] min-h-[80px] -mt-2 fade-in-down-hero opacity-0"
           loading="lazy"
           decoding="async"
         />

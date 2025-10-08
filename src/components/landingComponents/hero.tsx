@@ -20,24 +20,24 @@ export default function Hero() {
         <Image
           src={rectangle}
           alt="Rectangle"
-          className=" absolute top-[135px] right-6 z-0 object-contain fade-in-element"
+          className=" absolute top-[135px] right-6 z-0 object-contain fade-in-element opacity-0"
           loading="lazy"
           decoding="async"
         />
         <Image
           src={line1}
           alt="Line1"
-          className=" absolute top-[120px] right-25 z-0 object-contain"
+          className=" absolute top-[120px] right-25 z-0 object-contain opacity-0 fade-in-center"
         />
         <Image
           src={line2}
           alt="Line2"
-          className=" absolute bottom-5 right-110 z-0 object-contain"
+          className=" absolute bottom-5 right-110 z-0 object-contain opacity-0 fade-in-center"
         />
         <Image
           src={line3}
           alt="Line3"
-          className=" absolute bottom-0 right-5 z-0 object-contain"
+          className=" absolute bottom-0 right-5 z-0 object-contain opacity-0 fade-in-center"
         />
         <h5 className=" absolute text-[16px] leading-[24px] tracking-[2%] text-[#FFC657] -right-6 top-[55%] rotate-270">
           1,208 sq ft
